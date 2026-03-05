@@ -1,0 +1,33 @@
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Do columns banata hai */
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.service-card {
+    background: #1e1e1f; /* Dark background as per your image */
+    padding: 25px;
+    border-radius: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border: 1px solid #383838;
+}
+
+.service-icon-box i {
+    color: #ffdb70; /* Yellowish icon color like the sample */
+    font-size: 30px;
+}
+
+.service-content h4 {
+    color: #fafafa;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.service-content p {
+    color: #d6d6d6;
+    font-size: 14px;
+    line-height: 1.6;
+}
