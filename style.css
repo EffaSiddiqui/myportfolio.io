@@ -27,14 +27,12 @@ padding:50px 0;
 }
 
 .portfolio-container{
+display:flex;
 max-width:1200px;
 margin:auto;
-display:flex;
 gap:25px;
 padding:0 20px;
 }
-
-/* SIDEBAR */
 
 .sidebar{
 width:300px;
@@ -42,16 +40,16 @@ width:300px;
 
 .profile-card{
 background:var(--bg-card);
-padding:30px;
 border-radius:20px;
+padding:30px;
 border:var(--border);
 text-align:center;
 }
 
 .avatar-bg{
 background:#383838;
-padding:20px;
 border-radius:20px;
+padding:20px;
 margin-bottom:20px;
 }
 
@@ -66,8 +64,8 @@ margin-bottom:10px;
 
 .profile-title{
 background:var(--bg-item);
+font-size:0.75rem;
 padding:5px 15px;
-font-size:.8rem;
 border-radius:8px;
 display:inline-block;
 }
@@ -93,12 +91,12 @@ color:var(--accent);
 }
 
 .label{
-font-size:.7rem;
+font-size:0.7rem;
 color:gray;
 }
 
 .info-text{
-font-size:.9rem;
+font-size:0.85rem;
 }
 
 /* CONTENT */
@@ -122,9 +120,9 @@ border-bottom-left-radius:20px;
 }
 
 .nav-links{
-list-style:none;
 display:flex;
 gap:25px;
+list-style:none;
 }
 
 .nav-links li{
@@ -158,14 +156,15 @@ font-size:1.5rem;
 
 .service-grid{
 display:grid;
-grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(2,1fr);
 gap:20px;
 }
 
 .service-card{
-background:var(--bg-item);
+background:linear-gradient(to bottom right,#2b2b2c,#1e1e1f);
 padding:25px;
 border-radius:15px;
+border:var(--border);
 display:flex;
 gap:15px;
 }
@@ -175,15 +174,9 @@ font-size:2rem;
 color:var(--accent);
 }
 
-/* TIMELINE */
-
-.timeline-list{
-border-left:1px solid #383838;
-padding-left:25px;
-}
-
-.timeline-item{
-margin-bottom:25px;
+.service-content p{
+font-size:0.9rem;
+color:var(--text-gray);
 }
 
 /* FORM */
@@ -195,9 +188,9 @@ gap:15px;
 
 input,textarea{
 width:100%;
-padding:15px;
 background:none;
 border:var(--border);
+padding:15px;
 border-radius:12px;
 color:white;
 margin-bottom:15px;
@@ -206,10 +199,11 @@ margin-bottom:15px;
 button{
 background:var(--bg-item);
 color:var(--accent);
+border:var(--border);
 padding:12px 30px;
 border-radius:12px;
-border:var(--border);
 cursor:pointer;
+float:right;
 }
 
 /* MOBILE */
