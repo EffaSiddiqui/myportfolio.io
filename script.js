@@ -7,7 +7,7 @@ navLinks.forEach(link=>{
 
 link.addEventListener("click",()=>{
 
-const target=link.getAttribute("data-page")
+const targetPage=link.getAttribute("data-page")
 
 navLinks.forEach(l=>l.classList.remove("active-tab"))
 link.classList.add("active-tab")
@@ -16,10 +16,8 @@ pages.forEach(page=>{
 
 page.classList.remove("current")
 
-if(page.id===target){
-
+if(page.id===targetPage){
 page.classList.add("current")
-
 }
 
 })
