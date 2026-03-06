@@ -1,25 +1,33 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const navLinks = document.querySelectorAll('.nav-links li');
-    const pages = document.querySelectorAll('.content-tab');
+document.addEventListener("DOMContentLoaded",()=>{
 
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            const targetPage = link.getAttribute('data-page');
+const navLinks=document.querySelectorAll(".nav-links li")
+const pages=document.querySelectorAll(".content-tab")
 
-            // Update Active Class on Links
-            navLinks.forEach(l => l.classList.remove('active-tab'));
-            link.classList.add('active-tab');
+navLinks.forEach(link=>{
 
-            // Switch Sections
-            pages.forEach(page => {
-                page.classList.remove('current');
-                if (page.id === targetPage) {
-                    page.classList.add('current');
-                }
-            });
+link.addEventListener("click",()=>{
 
-            // Scroll to top of content for mobile users
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
-    });
-});
+const target=link.getAttribute("data-page")
+
+navLinks.forEach(l=>l.classList.remove("active-tab"))
+link.classList.add("active-tab")
+
+pages.forEach(page=>{
+
+page.classList.remove("current")
+
+if(page.id===target){
+
+page.classList.add("current")
+
+}
+
+})
+
+window.scrollTo({top:0,behavior:"smooth"})
+
+})
+
+})
+
+})
