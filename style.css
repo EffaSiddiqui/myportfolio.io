@@ -173,6 +173,33 @@ body{
   color:var(--text-gray);
 }
 
+/* TIMELINE SKILLS */
+.skills-section{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+  margin-bottom:40px;
+}
+
+.skill p{
+  margin-bottom:5px;
+  font-weight:500;
+}
+
+.skill-bar{
+  background:var(--bg-item);
+  border-radius:12px;
+  height:10px;
+  width:100%;
+  overflow:hidden;
+}
+
+.skill-progress{
+  height:100%;
+  background:var(--accent);
+  border-radius:12px;
+}
+
 /* TIMELINE */
 .timeline-list{
   display:flex;
